@@ -19,9 +19,9 @@ BMI 지수에 따른 결과는 다음과 같다.
 
 class Bmi(object):
     def __init__(self, name, cm, kg) -> None:
-        self.name = ''
-        self.cm = 0
-        self.kg = 0
+        self.name = name
+        self.cm = cm
+        self.kg = kg
         self.biman = ""
 
     def execute(self):
@@ -61,7 +61,6 @@ class Bmi(object):
         aster = "*" *40
         schema = "이름 키(cm) 몸무게(kg) 비만도"
         result = f"{name} {cm} {kg} {biman}"
-
         print(f"{title}\n {aster}\n {schema}\n {aster} \n {result} \n {aster} ")
 
 if __name__ == "__main__":
