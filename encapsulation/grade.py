@@ -26,8 +26,8 @@ class Grade(object):
         self.en = en
         self.ma = ma
         self.name = name
-        self.add = ""
-        self.avg = ""
+        self.add = 0
+        self.avg = 0.0
         self.grade = ""
 
         
