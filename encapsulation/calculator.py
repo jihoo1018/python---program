@@ -22,16 +22,15 @@ class Calculator(object):
         else:
             result = "잘못된 연산 입니다."
         print(f"{num1} {op} {num2} = {result}")
+    
+    @staticmethod
+    def main():
+        num1 = int(input("숫자 : "))
+        op = input("+, -, *, /, %")
+        num2 = int(input("숫자 : "))
+        calculator = Calculator(num1, op, num2)
+        calculator.execute()
 
-
-
-
-
-if __name__=="__main__":
-    num1 = int(input("숫자 : "))
-    op = input("+, -, *, /, %")
-    num2 = int(input("숫자 : "))
-    calculator = Calculator(num1, op, num2)
-    calculator.execute()
+Calculator.main()
 
 
