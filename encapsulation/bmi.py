@@ -69,7 +69,23 @@ class Bmi(object):
         print(f"{title}\n {aster}\n {schema}\n {aster} \n {result} \n {aster} ")
 
     @staticmethod
+    def print_menu():
+        pass
+
+    @staticmethod
     def main():
+        ls = []
+        while True:
+            menu = Bmi.print_menu
+            if menu == 0: break
+            if menu == 1:
+                print("등록")
+            if menu == 2:
+                print("목록")
+            if menu == 3:
+                print("삭제")
+            else: print("없는 메뉴 입니다. 다시 선택해 주세요")
+
         name = input ("이름: ")
         kg = int(input("몸무게 : "))
         cm = int(input("키 :"))
